@@ -5,12 +5,15 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
+  packages = [ pkgs.git pkgs.mermaid-cli ];
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
-  languages.python.enable = true;
-
+  languages.python = {
+    enable = true;
+    poetry.enable = true;
+    venv.enable = true;
+  };
   # https://devenv.sh/processes/
   # processes.cargo-watch.exec = "cargo-watch";
 

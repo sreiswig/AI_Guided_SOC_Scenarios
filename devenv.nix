@@ -9,11 +9,8 @@
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
-  languages.python = {
-    enable = true;
-    poetry.enable = true;
-    venv.enable = true;
-  };
+  languages.dotnet.enable = true;
+
   # https://devenv.sh/processes/
   # processes.cargo-watch.exec = "cargo-watch";
 

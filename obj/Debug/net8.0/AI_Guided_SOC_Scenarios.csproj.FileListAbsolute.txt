@@ -28,3 +28,5 @@
 /home/sam/Documents/AI_Guided_SOC_Scenarios/obj/Debug/net8.0/AI_Guided_SOC_Scenarios.pdb
 /home/sam/Documents/AI_Guided_SOC_Scenarios/obj/Debug/net8.0/AI_Guided_SOC_Scenarios.genruntimeconfig.cache
 /home/sam/Documents/AI_Guided_SOC_Scenarios/obj/Debug/net8.0/ref/AI_Guided_SOC_Scenarios.dll
+/home/sam/Documents/AI_Guided_SOC_Scenarios/obj/Debug/net8.0/scopedcss/Components/Layout/TraditionalLearningRoom.razor.rz.scp.css
+/home/sam/Documents/AI_Guided_SOC_Scenarios/obj/Debug/net8.0/scopedcss/Components/Layout/AIRoom.razor.rz.scp.css

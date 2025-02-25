@@ -1,0 +1,39 @@
+/* Traditional.razor.css */
+.traditional-room[b-47swa490ak] {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.traditional-room label[b-47swa490ak] {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.traditional-room input[type="text"][b-47swa490ak],
+.traditional-room textarea[b-47swa490ak] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.traditional-room button[b-47swa490ak] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #008751;
+  /* Fidelity Investments green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.traditional-room button:hover[b-47swa490ak] {
+  background-color: #00A859;
+}

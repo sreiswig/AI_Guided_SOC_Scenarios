@@ -5,7 +5,7 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git pkgs.mermaid-cli ];
+  packages = [ pkgs.git pkgs.mermaid-cli pkgs.netcoredbg ];
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;

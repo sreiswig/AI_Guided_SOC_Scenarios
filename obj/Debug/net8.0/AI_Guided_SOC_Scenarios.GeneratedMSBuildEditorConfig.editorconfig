@@ -42,10 +42,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/sam/Documents/AI_Guided_SOC_Scenarios/Components/Layout/AIRoom.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQUlSb29tLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-9wrwzadewq
-
 [/home/sam/Documents/AI_Guided_SOC_Scenarios/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ww7dg01lhd
@@ -53,7 +49,3 @@ build_metadata.AdditionalFiles.CssScope = b-ww7dg01lhd
 [/home/sam/Documents/AI_Guided_SOC_Scenarios/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-rewvzcdn75
-
-[/home/sam/Documents/AI_Guided_SOC_Scenarios/Components/Layout/TraditionalLearningRoom.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvVHJhZGl0aW9uYWxMZWFybmluZ1Jvb20ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-47swa490ak

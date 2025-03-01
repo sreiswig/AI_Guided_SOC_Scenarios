@@ -3,3 +3,36 @@
 
 <PageTitle>AI Room Example</PageTitle>
 <h1>AI Room Example</h1>
+
+<div>
+    <input @bind="message" placeholder="Type your message..." />
+    <button @onclick="SendMessage">Send</button>
+</div>
+<ul>
+    @foreach (var msg in messages)
+    {
+        <li>@msg</li>
+    }
+</ul>
+
+@code {
+    private string message;
+    private List<string> messages = new List<string>();
+
+    private void SendMessage()
+    {
+        if (!string.IsNullOrEmpty(message))
+        {
+            messages.Add($"You: {message}");
+            // Simulate AI response (replace with actual AI integration)
+            messages.Add($"AI: {GetAIResponse(message)}");
+            message = string.Empty;
+        }
+    }
+
+    private string GetAIResponse(string userMessage)
+    {
+        // Simulate a simple AI response (replace with actual AI integration)
+        return "This is an AI response.";
+    }
+}

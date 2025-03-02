@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AI_Guided_SOC_Scenarios")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff0d98026f37a0a9183dda8e5bc4cb04218c412c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d8ece0ec31a4a08226af3ab66a2cc5b05b2961a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AI_Guided_SOC_Scenarios")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AI_Guided_SOC_Scenarios")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

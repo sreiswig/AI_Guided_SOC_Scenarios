@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/wwwroot/images/Background.webp",
+      "PackagePath": "staticwebassets/images/Background.webp"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AI_Guided_SOC_Scenarios.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

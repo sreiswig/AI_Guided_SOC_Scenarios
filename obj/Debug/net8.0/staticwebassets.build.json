@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7z/8EgqnYIRASjELKOKT88++Op6rTsFATc3j34/huHY=",
+  "Hash": "BHedlm9PEz3Mvw0zcO8Qd7wqjaPD2iA6TDWdtq2BlvM=",
   "Source": "AI_Guided_SOC_Scenarios",
   "BasePath": "_content/AI_Guided_SOC_Scenarios",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.png"
+    },
+    {
+      "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/wwwroot/images/Background.webp",
+      "SourceId": "AI_Guided_SOC_Scenarios",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/wwwroot/",
+      "BasePath": "_content/AI_Guided_SOC_Scenarios",
+      "RelativePath": "images/Background.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Background.webp"
     }
   ]
 }

@@ -1,0 +1,13 @@
+@inherits LayoutComponentBase
+
+<div class="subheader">
+    <h2>@Title</h2>
+</div>
+<div class="sublayout-content">
+    @Body
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; }
+}
+

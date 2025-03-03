@@ -1,6 +1,8 @@
 /* CenteredChatComponent.razor.css */
 
-.centered-chat-container {
+/* (Keep the CSS from the previous CenteredChatComponent.razor.css example) */
+
+.centered-chat-component {
   position: fixed;
   /* Fixed position to center on the viewport */
   top: 50%;
@@ -79,4 +81,29 @@
 
 .send-button:hover {
   background-color: #0056b3;
+}
+
+/* Add message styles (you can reuse from ChatExamplePage.razor.css or create a shared CSS) */
+
+.message {
+  /* Reused message styles - you could move these to a shared CSS file */
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #e0f7fa;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+}
+
+.message-content {
+  word-wrap: break-word;
 }

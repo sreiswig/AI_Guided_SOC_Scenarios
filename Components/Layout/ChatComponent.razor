@@ -1,20 +1,25 @@
 @* ChatComponent.razor *@
 
 <div class="centered-chat-container">
-    <div class="centered-chat-interface">
-        <header class="chat-header">
-            @HeaderContent
-        </header>
+  <header class="chat-header">
+        @HeaderContent
+    </header>
 
-        <main class="chat-window">
-            @ChildContent
-        </main>
+    <main class="chat-window">
+        @foreach (var message in Messages)
+        {
+            <div class="@(message.IsUserMessage ? "message user-message" : "message bot-message")">
+                <div class="message-content">
+                    @message.Text
+                </div>
+            </div>
+        }
+    </main>
 
-        <footer class="chat-input-area">
-            <input type="text" placeholder="@InputPlaceholder" class="chat-input" />
-            <button class="send-button">@SendButtonText</button>
-        </footer>
-    </div>
+    <footer class="chat-input-area">
+        <input type="text" placeholder="@InputPlaceholder" class="chat-input" @bind="CurrentMessage" @onkeyup="HandleInputKeyUp" />
+        <button class="send-button" @onclick="SendMessage">@SendButtonText</button>
+    </footer>
 </div>
 
 @code {
@@ -29,4 +34,55 @@
 
     [Parameter]
     public string SendButtonText { get; set; } = "Send";
+
+    private List<ChatMessage> Messages = new List<ChatMessage>();
+    private string CurrentMessage { get; set; }
+
+    public class ChatMessage
+    {
+        public string Text { get; set; }
+        public bool IsUserMessage { get; set; }
+    }
+
+    private async Task SendMessage()
+    {
+        if (!string.IsNullOrWhiteSpace(CurrentMessage))
+        {
+            // Add user message
+            Messages.Add(new ChatMessage { Text = CurrentMessage, IsUserMessage = true });
+            CurrentMessage = ""; // Clear input
+
+            // Simulate AI response after a short delay
+            await Task.Delay(500); // 0.5 second delay
+            string aiResponse = GetFakeAIResponse();
+            Messages.Add(new ChatMessage { Text = aiResponse, IsUserMessage = false });
+
+            StateHasChanged(); // Update UI to show new messages
+        }
+    }
+
+    private async Task HandleInputKeyUp(KeyboardEventArgs args)
+    {
+        if (args.Key == "Enter")
+        {
+            await SendMessage();
+        }
+    }
+
+    private string GetFakeAIResponse()
+    {
+        // Simple fake AI responses - you can make this more sophisticated
+        string[] responses = new string[]
+        {
+            "Interesting question!",
+            "Let me think about that...",
+            "That's a great point.",
+            "I'm still learning about that.",
+            "Could you rephrase your question?",
+            "Here's a possible answer...",
+        };
+        Random random = new Random();
+        int index = random.Next(responses.Length);
+        return responses[index];
+    }
 }

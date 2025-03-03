@@ -1,6 +1,5 @@
 .background {
   background-image: url("/images/Background.webp");
-  background-size: 100% auto;
 }
 
 #blazor-error-ui {

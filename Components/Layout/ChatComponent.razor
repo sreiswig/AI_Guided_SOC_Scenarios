@@ -1,0 +1,32 @@
+@* ChatComponent.razor *@
+
+<div class="centered-chat-container">
+    <div class="centered-chat-interface">
+        <header class="chat-header">
+            @HeaderContent
+        </header>
+
+        <main class="chat-window">
+            @ChildContent
+        </main>
+
+        <footer class="chat-input-area">
+            <input type="text" placeholder="@InputPlaceholder" class="chat-input" />
+            <button class="send-button">@SendButtonText</button>
+        </footer>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment HeaderContent { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string InputPlaceholder { get; set; } = "Type your message...";
+
+    [Parameter]
+    public string SendButtonText { get; set; } = "Send";
+}

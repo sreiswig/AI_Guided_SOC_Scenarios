@@ -1,13 +1,15 @@
 @inherits LayoutComponentBase
+@layout MainLayout
 
-<div class="subheader">
-    <h2>@Title</h2>
-</div>
-<div class="sublayout-content">
-    @Body
-</div>
+<div class="learning-layout">
+    <header class="learning-header">
+        Learning Page Header
+    </header>
 
-@code {
-    [Parameter] public string Title { get; set; }
-}
+    <div class="learning-content-area">
+        <main class="learning-main-content">
+          <ChatComponent></ChatComponent>
+        </main>
+    </div>
+</div>
 

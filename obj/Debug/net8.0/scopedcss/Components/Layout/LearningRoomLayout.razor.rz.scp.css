@@ -1,0 +1,28 @@
+.learning-layout[b-dskmpbuqtk] {
+  flex: 100%;
+}
+
+.learning-header[b-dskmpbuqtk] {
+  grid-area: header;
+  background-image: url("/images/Background.webp");
+  /* Example header color */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.learning-content-area[b-dskmpbuqtk] {
+  grid-area: content-area;
+  /* Not directly placed in grid-areas, but used for flexbox below */
+  display: grid;
+  grid-template-columns: inherit;
+  /* Use the same column structure as the layout */
+  grid-template-areas:
+    "sidebar content chat-sidebar";
+}
+
+.learning-main-content[b-dskmpbuqtk] {
+  grid-area: content;
+  padding: 2rem;
+}

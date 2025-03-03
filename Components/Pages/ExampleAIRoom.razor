@@ -1,37 +1,41 @@
 @page "/example-ai"
+@layout LearningRoomLayout
 
 <PageTitle>AI Room Example</PageTitle>
 <h1>AI Room Example</h1>
 
-<div>
-    <input @bind="message" placeholder="Type your message..." />
-    <button @onclick="SendMessage">Send</button>
+<h1>Centered Chat Component Example</h1>
+
+<p>This page demonstrates the ChatComponent. The chat interface will appear in the middle of the screen, overlaying the page content.</p>
+
+<ChatComponent>
+    <HeaderContent>
+        <h3>Centered Chat</h3>
+    </HeaderContent>
+    <ChildContent>
+        <div class="message bot-message">
+            <div class="message-content">
+                This chat is centered on the screen.
+            </div>
+        </div>
+        <div class="message user-message">
+            <div class="message-content">
+                Great! I see it.
+            </div>
+        </div>
+    </ChildContent>
+</ChatComponent>
+
+<div class="page-content">
+    <h2>Page Content Below Chat</h2>
+    <p>This is some example content that is behind the centered chat component. You can scroll this content.</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
+    <p>More content...</p>
 </div>
-<ul>
-    @foreach (var msg in messages)
-    {
-        <li>@msg</li>
-    }
-</ul>
-
-@code {
-    private string message;
-    private List<string> messages = new List<string>();
-
-    private void SendMessage()
-    {
-        if (!string.IsNullOrEmpty(message))
-        {
-            messages.Add($"You: {message}");
-            // Simulate AI response (replace with actual AI integration)
-            messages.Add($"AI: {GetAIResponse(message)}");
-            message = string.Empty;
-        }
-    }
-
-    private string GetAIResponse(string userMessage)
-    {
-        // Simulate a simple AI response (replace with actual AI integration)
-        return "This is an AI response.";
-    }
-}

@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "Hash": "a2WXdFdq2lqk7sOf1l7WeuJL1xa0pgxTSy00Xr+eRuc=",
+  "Source": "Test_Suite_AI_Guided_SOC_Scenarios",
+  "BasePath": "_content/Test_Suite_AI_Guided_SOC_Scenarios",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "/home/sam/.nuget/packages/microsoft.aspnetcore.components.webassembly.authentication/7.0.20/staticwebassets/AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "/home/sam/.nuget/packages/microsoft.aspnetcore.components.webassembly.authentication/7.0.20/staticwebassets/",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/sam/.nuget/packages/microsoft.aspnetcore.components.webassembly.authentication/7.0.20/staticwebassets/AuthenticationService.js"
+    }
+  ]
+}

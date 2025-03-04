@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/projectbundle/AI_Guided_SOC_Scenarios.bundle.scp.css",
+      "PackagePath": "staticwebassets/AI_Guided_SOC_Scenarios.bundle.scp.css"
+    },
+    {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/images/Background.webp",
+      "PackagePath": "staticwebassets/images/Background.webp"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AI_Guided_SOC_Scenarios.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.AI_Guided_SOC_Scenarios.props",
+      "PackagePath": "build\\AI_Guided_SOC_Scenarios.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.AI_Guided_SOC_Scenarios.props",
+      "PackagePath": "buildMultiTargeting\\AI_Guided_SOC_Scenarios.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.AI_Guided_SOC_Scenarios.props",
+      "PackagePath": "buildTransitive\\AI_Guided_SOC_Scenarios.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

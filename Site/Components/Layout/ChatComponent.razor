@@ -19,5 +19,9 @@
 
   private async Task Debug() {
     Console.WriteLine("Testing");
+    await js.InvokeVoidAsync("eval", "alert('Debug method called');");
   }
+
+  [Inject]
+  private IJSRuntime js { get; set; }
 }

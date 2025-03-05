@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/AI_Guided_SOC_Scenarios.csproj",
-      "projectName": "AI_Guided_SOC_Scenarios",
-      "projectPath": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/AI_Guided_SOC_Scenarios.csproj",
+      "projectUniqueName": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/Site.csproj",
+      "projectName": "Site",
+      "projectPath": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/Site.csproj",
       "packagesPath": "/home/sam/.nuget/packages/",
       "outputPath": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/",
       "projectStyle": "PackageReference",

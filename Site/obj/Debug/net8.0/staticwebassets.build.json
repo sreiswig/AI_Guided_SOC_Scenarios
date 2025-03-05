@@ -1,28 +1,28 @@
 {
   "Version": 1,
-  "Hash": "ltl9DDLoiOnLTjqWX3gUUXYvLxYheO8iUqe2oijRPGQ=",
-  "Source": "AI_Guided_SOC_Scenarios",
-  "BasePath": "_content/AI_Guided_SOC_Scenarios",
+  "Hash": "0uUUt53uHmcXa1kkrddaszY8NtTsqTHeFBWcK8t1f9s=",
+  "Source": "Site",
+  "BasePath": "_content/Site",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "AI_Guided_SOC_Scenarios/wwwroot",
-      "Source": "AI_Guided_SOC_Scenarios",
+      "Name": "Site/wwwroot",
+      "Source": "Site",
       "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
+      "BasePath": "_content/Site",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/bundle/AI_Guided_SOC_Scenarios.styles.css",
-      "SourceId": "AI_Guided_SOC_Scenarios",
+      "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/bundle/Site.styles.css",
+      "SourceId": "Site",
       "SourceType": "Computed",
       "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/bundle/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
-      "RelativePath": "AI_Guided_SOC_Scenarios.styles.css",
+      "BasePath": "_content/Site",
+      "RelativePath": "Site.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/bundle/AI_Guided_SOC_Scenarios.styles.css"
+      "OriginalItemSpec": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/bundle/Site.styles.css"
     },
     {
-      "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/projectbundle/AI_Guided_SOC_Scenarios.bundle.scp.css",
-      "SourceId": "AI_Guided_SOC_Scenarios",
+      "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/projectbundle/Site.bundle.scp.css",
+      "SourceId": "Site",
       "SourceType": "Computed",
       "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/projectbundle/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
-      "RelativePath": "AI_Guided_SOC_Scenarios.bundle.scp.css",
+      "BasePath": "_content/Site",
+      "RelativePath": "Site.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -52,14 +52,14 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/projectbundle/AI_Guided_SOC_Scenarios.bundle.scp.css"
+      "OriginalItemSpec": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/projectbundle/Site.bundle.scp.css"
     },
     {
       "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/app.css",
-      "SourceId": "AI_Guided_SOC_Scenarios",
+      "SourceId": "Site",
       "SourceType": "Discovered",
       "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
+      "BasePath": "_content/Site",
       "RelativePath": "app.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -75,10 +75,10 @@
     },
     {
       "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/bootstrap/bootstrap.min.css",
-      "SourceId": "AI_Guided_SOC_Scenarios",
+      "SourceId": "Site",
       "SourceType": "Discovered",
       "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
+      "BasePath": "_content/Site",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -94,10 +94,10 @@
     },
     {
       "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/bootstrap/bootstrap.min.css.map",
-      "SourceId": "AI_Guided_SOC_Scenarios",
+      "SourceId": "Site",
       "SourceType": "Discovered",
       "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
+      "BasePath": "_content/Site",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -113,10 +113,10 @@
     },
     {
       "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/favicon.png",
-      "SourceId": "AI_Guided_SOC_Scenarios",
+      "SourceId": "Site",
       "SourceType": "Discovered",
       "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
+      "BasePath": "_content/Site",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -129,25 +129,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.png"
-    },
-    {
-      "Identity": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/images/Background.webp",
-      "SourceId": "AI_Guided_SOC_Scenarios",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/",
-      "BasePath": "_content/AI_Guided_SOC_Scenarios",
-      "RelativePath": "images/Background.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Background.webp"
     }
   ]
 }

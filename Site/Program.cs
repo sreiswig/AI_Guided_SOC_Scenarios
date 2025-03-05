@@ -1,4 +1,4 @@
-using AI_Guided_SOC_Scenarios.Components;
+using Site.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 

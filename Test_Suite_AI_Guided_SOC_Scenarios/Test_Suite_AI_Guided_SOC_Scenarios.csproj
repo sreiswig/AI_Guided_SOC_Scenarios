@@ -31,7 +31,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Site\AI_Guided_SOC_Scenarios.csproj" />
+	  <ProjectReference Include="..\Site\Site.csproj" />
 	</ItemGroup>
 
 

@@ -1,0 +1,22 @@
+<div>
+  <div>
+  </div>
+  <div>
+    <input type="text" @bind="CurrentInput" />
+    <button @onclick="SendMessage">@Send</button>
+  </div>
+</div>
+
+@code {
+  private string CurrentInput { get; set; } = "";
+  private string Send { get; set; } = "No";
+
+  private void SendMessage() {
+    if (!string.IsNullOrWhiteSpace(CurrentInput)) {
+      Send = CurrentInput;
+      CurrentInput = "";
+    }
+    StateHasChanged();
+  }
+}
+

@@ -28,3 +28,4 @@
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/Site.pdb
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/Site.genruntimeconfig.cache
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/ref/Site.dll
+/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/Components/Layout/AIChat.razor.rz.scp.css

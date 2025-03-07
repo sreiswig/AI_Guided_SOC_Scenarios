@@ -1,5 +1,10 @@
+@rendermode InteractiveServer
+
 <div>
   <div>
+    @foreach (var message in Messages) {
+      <div>@message</div>
+    }
   </div>
   <div>
     <input type="text" @bind="CurrentInput" />
@@ -9,14 +14,14 @@
 
 @code {
   private string CurrentInput { get; set; } = "";
-  private string Send { get; set; } = "No";
+  private string Send { get; set; } = "Send";
+  private List<string> Messages { get; set; } = new List<string>();
 
   private void SendMessage() {
     if (!string.IsNullOrWhiteSpace(CurrentInput)) {
-      Send = CurrentInput;
+      Messages.Add(CurrentInput);
       CurrentInput = "";
     }
-    StateHasChanged();
   }
 }
 

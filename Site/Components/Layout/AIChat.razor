@@ -4,7 +4,11 @@
 <div>
   <div>
     @foreach (var message in Messages) {
-      <div>@message</div>
+      @if (message.User == "user") {
+        <div class="user-message">@message.Message</div>
+      } else {
+        <div class="ai-message">@message.Message</div>
+      }
     }
   </div>
   <div>
@@ -14,16 +18,29 @@
 </div>
 
 @code {
+  public struct ChatMessage {
+    public ChatMessage(string user, string message) {
+      User = user;
+      Message = message;
+    }
+
+    public string User { get; }
+    public string Message { get; }
+  }
+
   private string CurrentInput { get; set; } = "";
   private string Send { get; set; } = "Send";
-  private List<string> Messages { get; set; } = new List<string>();
+  private List<ChatMessage> Messages { get; set; } = new List<ChatMessage>();
 
   private string AIContext = "You are a world builder that specializes in Security scenarios for a Security Operations Center. When the user interacts with you, you will first generate a scenario and then help the user understand it. The user will start below.";
 
   private void SendMessage() {
     if (!string.IsNullOrWhiteSpace(CurrentInput)) {
-      Messages.Add(CurrentInput);
+      ChatMessage cm = new ChatMessage("user", CurrentInput);
+      Messages.Add(cm);
       CurrentInput = "";
+      cm = new ChatMessage("ai", "test message");
+      Messages.Add(cm);
     }
   }
 

@@ -7,7 +7,7 @@
     }
   </div>
   <div>
-    <input type="text" @bind="CurrentInput" />
+    <input type="text" @onkeyup="@ChatInputKeyPress" @bind="CurrentInput" />
     <button @onclick="SendMessage">@Send</button>
   </div>
 </div>
@@ -21,6 +21,12 @@
     if (!string.IsNullOrWhiteSpace(CurrentInput)) {
       Messages.Add(CurrentInput);
       CurrentInput = "";
+    }
+  }
+
+  private void ChatInputKeyPress(KeyboardEventArgs args) {
+    if (args.Key == "Enter") { 
+      SendMessage();
     }
   }
 }

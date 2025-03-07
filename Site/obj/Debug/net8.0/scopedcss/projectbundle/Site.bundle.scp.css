@@ -1,10 +1,19 @@
 /* _content/Site/Components/Layout/AIChat.razor.rz.scp.css */
 .user-message[b-4ma8p0hkjm] {
-  background-color: blueviolet;
+  background-color: lightcyan;
+  justify-self: right;
 }
 
 .ai-message[b-4ma8p0hkjm] {
-  background-color: red;
+  background-color: lightgreen;
+  margin: auto;
+}
+
+.center[b-4ma8p0hkjm] {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 /* _content/Site/Components/Layout/MainLayout.razor.rz.scp.css */
 main[b-izt6un4l4f] {

@@ -1,7 +1,16 @@
 .user-message {
-  background-color: blueviolet;
+  background-color: lightcyan;
+  justify-self: right;
 }
 
 .ai-message {
-  background-color: red;
+  background-color: lightgreen;
+  margin: auto;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }

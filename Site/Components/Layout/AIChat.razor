@@ -1,19 +1,27 @@
 @using OpenAI.Chat;
 @rendermode InteractiveServer
 
-<div>
+<div class="center">
   <div>
-    @foreach (var message in Messages.Reverse()) {
+  @if (!(Messages == null)) {
+    @foreach (var message in Messages) {
       @if (message.User == "user") {
-        <div class="user-message">@message.Message</div>
+        <span class="user-message">
+          <div class="user-message">@message.Message</div>
+        </span>
       } else {
-        <div class="ai-message">@message.Message</div>
+        <span class="ai-message">
+          <div class="ai-message">@message.Message</div>
+        </span>
       }
     }
+  }
   </div>
-  <div>
-    <input type="text" @onkeyup="@ChatInputKeyPress" @bind="CurrentInput" />
-    <button @onclick="SendMessage">@Send</button>
+  <div class="center">
+    <span class="center">
+      <input type="text" @onkeyup="@ChatInputKeyPress" @bind="CurrentInput" />
+      <button @onclick="SendMessage">@Send</button>
+    </span>
   </div>
 </div>
 

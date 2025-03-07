@@ -3,7 +3,7 @@
 
 <div>
   <div>
-    @foreach (var message in Messages) {
+    @foreach (var message in Messages.Reverse()) {
       @if (message.User == "user") {
         <div class="user-message">@message.Message</div>
       } else {
@@ -39,7 +39,7 @@
       ChatMessage cm = new ChatMessage("user", CurrentInput);
       Messages.Add(cm);
       CurrentInput = "";
-      cm = new ChatMessage("ai", "test message");
+      cm = new ChatMessage("ai", "test ai message");
       Messages.Add(cm);
     }
   }

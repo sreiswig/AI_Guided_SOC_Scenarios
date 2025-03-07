@@ -1,3 +1,4 @@
+@using OpenAI.Chat;
 @rendermode InteractiveServer
 
 <div>
@@ -16,6 +17,8 @@
   private string CurrentInput { get; set; } = "";
   private string Send { get; set; } = "Send";
   private List<string> Messages { get; set; } = new List<string>();
+
+  private string AIContext = "You are a world builder that specializes in Security scenarios for a Security Operations Center. When the user interacts with you, you will first generate a scenario and then help the user understand it. The user will start below.";
 
   private void SendMessage() {
     if (!string.IsNullOrWhiteSpace(CurrentInput)) {

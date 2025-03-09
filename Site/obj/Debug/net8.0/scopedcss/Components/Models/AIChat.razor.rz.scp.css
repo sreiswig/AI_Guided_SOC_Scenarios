@@ -5,12 +5,10 @@
 
 .ai-message[b-9yfspxm82b] {
   background-color: lightgreen;
-  margin: auto;
+  justify-self: left;
 }
 
-.center[b-9yfspxm82b] {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+.right[b-9yfspxm82b] {
+  display: flex;
+  justify-content: right;
 }

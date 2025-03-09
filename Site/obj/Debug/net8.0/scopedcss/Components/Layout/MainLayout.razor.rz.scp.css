@@ -2,6 +2,11 @@ main[b-izt6un4l4f] {
   flex: 1;
 }
 
+.center[b-izt6un4l4f] {
+  display: flex;
+  justify-content: center;
+}
+
 #blazor-error-ui[b-izt6un4l4f] {
   background: lightyellow;
   bottom: 0;

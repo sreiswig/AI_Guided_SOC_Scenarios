@@ -3,6 +3,11 @@ main[b-izt6un4l4f] {
   flex: 1;
 }
 
+.center[b-izt6un4l4f] {
+  display: flex;
+  justify-content: center;
+}
+
 #blazor-error-ui[b-izt6un4l4f] {
   background: lightyellow;
   bottom: 0;
@@ -33,6 +38,11 @@ main[b-izt6un4l4f] {
 .nav-spacing[b-8md1k9y6ic] {
   margin: 10px;
 }
+
+.center[b-8md1k9y6ic] {
+  display: flex;
+  justify-content: center;
+}
 /* _content/Site/Components/Models/AIChat.razor.rz.scp.css */
 .user-message[b-9yfspxm82b] {
   background-color: lightcyan;
@@ -41,12 +51,10 @@ main[b-izt6un4l4f] {
 
 .ai-message[b-9yfspxm82b] {
   background-color: lightgreen;
-  margin: auto;
+  justify-self: left;
 }
 
-.center[b-9yfspxm82b] {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+.right[b-9yfspxm82b] {
+  display: flex;
+  justify-content: right;
 }

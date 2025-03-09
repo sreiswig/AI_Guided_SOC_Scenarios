@@ -9,3 +9,8 @@
 .nav-spacing[b-8md1k9y6ic] {
   margin: 10px;
 }
+
+.center[b-8md1k9y6ic] {
+  display: flex;
+  justify-content: center;
+}

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Site.bundle.scp.css"
     },
     {
+      "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/Images/Background.webp",
+      "PackagePath": "staticwebassets/Images/Background.webp"
+    },
+    {
       "Id": "/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },

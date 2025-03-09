@@ -28,9 +28,9 @@
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/Site.pdb
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/Site.genruntimeconfig.cache
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/ref/Site.dll
-/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/Components/Layout/AIChat.razor.rz.scp.css
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/bin/Debug/net8.0/OpenAI.dll
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/bin/Debug/net8.0/System.ClientModel.dll
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/bin/Debug/net8.0/System.Memory.Data.dll
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/Site.csproj.AssemblyReference.cache
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/Site.csproj.Up2Date
+/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/Components/Models/AIChat.razor.rz.scp.css

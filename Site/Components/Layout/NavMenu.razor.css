@@ -1,3 +1,11 @@
+.brand-color {
+  color: black;
+}
+
 .nav-background {
-  background-image: linear-gradient(to right, #76A923, #006044);
+  background-image: linear-gradient(to right, #368727, #006044);
+}
+
+.nav-spacing {
+  margin: 10px;
 }

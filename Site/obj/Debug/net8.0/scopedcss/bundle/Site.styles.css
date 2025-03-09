@@ -1,20 +1,3 @@
-/* _content/Site/Components/Layout/AIChat.razor.rz.scp.css */
-.user-message[b-4ma8p0hkjm] {
-  background-color: lightcyan;
-  justify-self: right;
-}
-
-.ai-message[b-4ma8p0hkjm] {
-  background-color: lightgreen;
-  margin: auto;
-}
-
-.center[b-4ma8p0hkjm] {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-}
 /* _content/Site/Components/Layout/MainLayout.razor.rz.scp.css */
 main[b-izt6un4l4f] {
   flex: 1;
@@ -39,6 +22,31 @@ main[b-izt6un4l4f] {
   top: 0.5rem;
 }
 /* _content/Site/Components/Layout/NavMenu.razor.rz.scp.css */
+.brand-color[b-8md1k9y6ic] {
+  color: black;
+}
+
 .nav-background[b-8md1k9y6ic] {
-  background-image: linear-gradient(to right, #76A923, #006044);
+  background-image: linear-gradient(to right, #368727, #006044);
+}
+
+.nav-spacing[b-8md1k9y6ic] {
+  margin: 10px;
+}
+/* _content/Site/Components/Models/AIChat.razor.rz.scp.css */
+.user-message[b-9yfspxm82b] {
+  background-color: lightcyan;
+  justify-self: right;
+}
+
+.ai-message[b-9yfspxm82b] {
+  background-color: lightgreen;
+  margin: auto;
+}
+
+.center[b-9yfspxm82b] {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }

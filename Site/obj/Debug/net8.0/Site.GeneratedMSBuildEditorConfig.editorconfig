@@ -50,10 +50,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/Components/Layout/AIChat.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvQUlDaGF0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-4ma8p0hkjm
-
 [/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-izt6un4l4f
@@ -61,3 +57,7 @@ build_metadata.AdditionalFiles.CssScope = b-izt6un4l4f
 [/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-8md1k9y6ic
+
+[/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/Components/Models/AIChat.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Nb2RlbHMvQUlDaGF0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-9yfspxm82b

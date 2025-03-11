@@ -1,9 +1,21 @@
-﻿<nav class="navbar navbar-expand-lg nav-background center">
+﻿<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+  <nav class="navbar navbar-expand-lg nav-background center">
     <a class="navbar-brand brand-color nav-spacing" href="#">FidHackMe</a>
-    <NavLink href="">
+    <NavLink class="nav-item" href="" Match="NavLinkMatch.All">
       <span class="bi bi-house-door-fill-nav-menu nav-spacing", aria-hidden="true"></span> Learn
     </NavLink>
-    <NavLink href="learningroom">
+    <NavLink class="nav-item" href="learningroom">
       <span class="bi bi-airplane-engines-fill nav-spacing" aria-hidden="true"></span> Test AI Room
     </NavLink>
-</nav>
+  </nav>
+</div>
+
+@code {
+  private bool collapseNavMenu = true;
+
+  private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+  private void ToggleNavMenu() {
+    collapseNavMenu = !collapseNavMenu;
+  }
+}

@@ -20,7 +20,7 @@
   padding-bottom: 0.5rem;
 }
 
-.nav-item[b-8md1k9y6ic]  a {
+.nav-item a[b-8md1k9y6ic] {
   color: #d7d7d7;
   height: 3rem;
   display: flex;
@@ -29,12 +29,12 @@
   border-radius: 4px;
 }
 
-.nav-item[b-8md1k9y6ic]  a.active {
+.nav-item a.active[b-8md1k9y6ic] {
   background-color: rgba(255, 255, 255, 0.37);
   color: white;
 }
 
-.nav-item[b-8md1k9y6ic]  a:hover {
+.nav-item a:hover[b-8md1k9y6ic] {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }

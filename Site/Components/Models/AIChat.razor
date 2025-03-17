@@ -1,26 +1,28 @@
 @using OpenAI.Chat;
 @rendermode InteractiveServer
 
-<div>
-  <div>
+<div style="display: flex; flex-direction: column; height: 80vh;">
+  <div style="flex-grow: 1; overflow-y: auto; padding: 10px;">
   @if (!(Messages == null)) {
     @foreach (var message in Messages) {
+      <div class="message-container">
       @if (message.User == "user") {
-        <span class="user-message">
           <div class="user-message">@message.Message</div>
-        </span>
       } else {
-        <span class="ai-message">
           <div class="ai-message">@message.Message</div>
-        </span>
       }
+      </div>
     }
   }
   </div>
   <div>
     <span class="right">
-      <input style="width: 100%;" type="text" @onkeyup="@ChatInputKeyPress" @bind="CurrentInput" />
-      <button @onclick="SendMessage">@Send</button>
+      <textarea style="width: 100%; border-radius: 5px; padding: 8px; resize: vertical; overflow-y: auto; max-height: 200px;" @onkeydown="@ChatInputKeyPress" @bind="CurrentInput"></textarea>
+      <button class="send-button" @onclick="SendMessage">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+          <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+        </svg>
+      </button>
     </span>
   </div>
 </div>
@@ -36,14 +38,14 @@
     public string Message { get; }
   }
 
-  private string CurrentInput { get; set; } = "";
-  private string Send { get; set; } = "Send";
+  private string CurrentInput { get; set; } = "Ask AI";
   private List<ChatMessage> Messages { get; set; } = new List<ChatMessage>();
 
   private string AIContext = "You are a world builder that specializes in Security scenarios for a Security Operations Center. When the user interacts with you, you will first generate a scenario and then help the user understand it. The user will start below.";
 
   private void SendMessage() {
     if (!string.IsNullOrWhiteSpace(CurrentInput)) {
+      CurrentInput = CurrentInput.Trim();
       ChatMessage cm = new ChatMessage("user", CurrentInput);
       Messages.Add(cm);
       CurrentInput = "";
@@ -53,8 +55,9 @@
   }
 
   private void ChatInputKeyPress(KeyboardEventArgs args) {
-    if (args.Key == "Enter") { 
+    if (args.Key == "Enter" && !args.ShiftKey) { 
       SendMessage();
+      return;
     }
   }
 }

@@ -20,23 +20,18 @@
   padding-bottom: 0.5rem;
 }
 
-.nav-item a[b-8md1k9y6ic] {
-  color: #d7d7d7;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  line-height: 3rem;
-  border-radius: 4px;
+.nav-item[b-8md1k9y6ic]  a {
+  color: black;
+  padding: 10px;
 }
 
-.nav-item a.active[b-8md1k9y6ic] {
-  background-color: rgba(255, 255, 255, 0.37);
+.nav-item[b-8md1k9y6ic]  a.active {
   color: white;
+  background-color: darkgreen;
 }
 
-.nav-item a:hover[b-8md1k9y6ic] {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+.nav-item[b-8md1k9y6ic]  a:hover {
+  background-color: lightgreen;
 }
 
 .bi[b-8md1k9y6ic] {
@@ -45,6 +40,7 @@
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0.75rem;
+  vertical-align: middle;
   top: -1px;
   background-size: cover;
 }

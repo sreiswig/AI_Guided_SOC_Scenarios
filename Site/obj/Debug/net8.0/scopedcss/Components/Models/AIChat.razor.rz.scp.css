@@ -1,14 +1,54 @@
+.message-container[b-9yfspxm82b] {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 .user-message[b-9yfspxm82b] {
-  background-color: lightcyan;
-  justify-self: right;
+  background-color: lightgreen;
+  align-self: flex-end;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 70%;
+  display: inline-block;
 }
 
 .ai-message[b-9yfspxm82b] {
-  background-color: lightgreen;
-  justify-self: left;
+  background-color: greenyellow;
+  align-self: flex-start;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 70%;
+  display: inline-block;
 }
 
 .right[b-9yfspxm82b] {
   display: flex;
   justify-content: right;
+}
+
+.send-button[b-9yfspxm82b] {
+  background-color: #368727;
+  /* Example blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button:hover[b-9yfspxm82b] {
+  background-color: #006044;
+  /* Darker blue on hover */
+}
+
+.send-button svg[b-9yfspxm82b] {
+  fill: white;
+  /* Ensure the SVG is white */
 }

@@ -49,23 +49,18 @@ main[b-izt6un4l4f] {
   padding-bottom: 0.5rem;
 }
 
-.nav-item a[b-8md1k9y6ic] {
-  color: #d7d7d7;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  line-height: 3rem;
-  border-radius: 4px;
+.nav-item[b-8md1k9y6ic]  a {
+  color: black;
+  padding: 10px;
 }
 
-.nav-item a.active[b-8md1k9y6ic] {
-  background-color: rgba(255, 255, 255, 0.37);
+.nav-item[b-8md1k9y6ic]  a.active {
   color: white;
+  background-color: darkgreen;
 }
 
-.nav-item a:hover[b-8md1k9y6ic] {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+.nav-item[b-8md1k9y6ic]  a:hover {
+  background-color: lightgreen;
 }
 
 .bi[b-8md1k9y6ic] {
@@ -74,6 +69,7 @@ main[b-izt6un4l4f] {
   width: 1.25rem;
   height: 1.25rem;
   margin-right: 0.75rem;
+  vertical-align: middle;
   top: -1px;
   background-size: cover;
 }
@@ -105,18 +101,58 @@ main[b-izt6un4l4f] {
   }
 }
 /* _content/Site/Components/Models/AIChat.razor.rz.scp.css */
+.message-container[b-9yfspxm82b] {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 .user-message[b-9yfspxm82b] {
-  background-color: lightcyan;
-  justify-self: right;
+  background-color: lightgreen;
+  align-self: flex-end;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 70%;
+  display: inline-block;
 }
 
 .ai-message[b-9yfspxm82b] {
-  background-color: lightgreen;
-  justify-self: left;
+  background-color: greenyellow;
+  align-self: flex-start;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 70%;
+  display: inline-block;
 }
 
 .right[b-9yfspxm82b] {
   display: flex;
   justify-content: right;
+}
+
+.send-button[b-9yfspxm82b] {
+  background-color: #368727;
+  /* Example blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button:hover[b-9yfspxm82b] {
+  background-color: #006044;
+  /* Darker blue on hover */
+}
+
+.send-button svg[b-9yfspxm82b] {
+  fill: white;
+  /* Ensure the SVG is white */
 }
 /* _content/Site/Components/Models/Room.razor.rz.scp.css */

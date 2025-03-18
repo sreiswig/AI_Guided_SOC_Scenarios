@@ -35,3 +35,4 @@
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/Site.genruntimeconfig.cache
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/ref/Site.dll
 /home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/Components/Models/Room.razor.rz.scp.css
+/home/sam/Documents/AI_Guided_SOC_Scenarios/Site/obj/Debug/net8.0/scopedcss/Components/Models/FoldingSection.razor.rz.scp.css

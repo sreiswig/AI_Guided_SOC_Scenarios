@@ -1,0 +1,33 @@
+<div class="folding-section">
+    <div class="header" @onclick="Toggle">
+        <span class="title">@Title</span>
+        <span class="icon">
+            @if (IsExpanded)
+            {
+                <i class="fas fa-chevron-up"></i>
+            }
+            else
+            {
+                <i class="fas fa-chevron-down"></i>
+            }
+        </span>
+    </div>
+    <div class="content @(IsExpanded ? "expanded" : "")">
+        @ChildContent
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    private bool IsExpanded = false;
+
+    private void Toggle()
+    {
+        IsExpanded = !IsExpanded;
+    }
+}

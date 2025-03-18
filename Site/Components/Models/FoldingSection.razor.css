@@ -1,0 +1,37 @@
+.folding-section {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.folding-section .header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folding-section .header .title {
+  font-weight: bold;
+}
+
+.folding-section .content {
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.folding-section .content.expanded {
+  /* Corrected: Set max-height to a large value, but not fixed to a pixel number. */
+  max-height: 1000px;
+  /* Or a larger value that will accommodate most content */
+  transition: max-height 0.3s ease-in;
+}
+
+.folding-section .icon {
+  font-size: 1.2em;
+}

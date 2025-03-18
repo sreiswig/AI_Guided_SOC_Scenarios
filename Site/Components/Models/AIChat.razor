@@ -1,4 +1,5 @@
 @using OpenAI.Chat;
+@using Microsoft.Extensions.Configuration;
 @rendermode InteractiveServer
 
 <div style="display: flex; flex-direction: column; height: 80vh;">
@@ -18,7 +19,7 @@
   <div>
     <span class="right">
       <textarea style="width: 100%; border-radius: 5px; padding: 8px; resize: vertical; overflow-y: auto; max-height: 200px;" @onkeydown="@ChatInputKeyPress" @bind="CurrentInput"></textarea>
-      <button class="send-button" @onclick="SendMessage">
+      <button class="send-button" @onclick="SendMessageToAI">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
           <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
         </svg>
@@ -28,6 +29,9 @@
 </div>
 
 @code {
+  [Inject]
+  public IConfiguration Configuration { get; set; }
+
   public struct ChatMessage {
     public ChatMessage(string user, string message) {
       User = user;
@@ -43,20 +47,43 @@
 
   private string AIContext = "You are a world builder that specializes in Security scenarios for a Security Operations Center. When the user interacts with you, you will first generate a scenario and then help the user understand it. The user will start below.";
 
-  private void SendMessage() {
+  private async Task SendMessageToAI() {
     if (!string.IsNullOrWhiteSpace(CurrentInput)) {
       CurrentInput = CurrentInput.Trim();
-      ChatMessage cm = new ChatMessage("user", CurrentInput);
-      Messages.Add(cm);
+      ChatMessage userMessage = new ChatMessage("user", CurrentInput);
+      Messages.Add(userMessage);
+
+      string aiResponse = await GetAIResponse(CurrentInput);
+      ChatMessage aiChatMessage = new ChatMessage("ai", aiResponse);
+      Messages.Add(aiChatMessage);
+
       CurrentInput = "";
-      cm = new ChatMessage("ai", "test ai message");
-      Messages.Add(cm);
+    }
+  }
+
+  private async Task<string> GetAIResponse(string userMessage) {
+    string apiKey = Configuration["OpenAI:ApiKey"];
+    if (string.IsNullOrEmpty(apiKey)) {
+      return "Error: OpenAI API key not found.";
+    }
+
+    ChatClient client = new (
+      model: "gpt-4o",
+      apiKey: Environment.GetEnvironmentVariable("OPENAI_API_KEY")
+    );
+
+    try {
+      ChatCompletion completion = client.CompleteChat("Say 'this is a test.");
+      return completion.Content[0].Text;
+    }
+    catch (Exception ex) {
+      return $"Error: {ex.Message}";
     }
   }
 
   private void ChatInputKeyPress(KeyboardEventArgs args) {
     if (args.Key == "Enter" && !args.ShiftKey) { 
-      SendMessage();
+      SendMessageToAI();
       return;
     }
   }

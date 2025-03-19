@@ -73,7 +73,7 @@
     );
 
     try {
-      ChatCompletion completion = client.CompleteChat(userMessage);
+      ChatCompletion completion = client.CompleteChat(AIContext + "/n" + userMessage);
       return completion.Content[0].Text;
     }
     catch (Exception ex) {

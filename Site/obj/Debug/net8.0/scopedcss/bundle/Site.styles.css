@@ -134,7 +134,6 @@ main[b-izt6un4l4f] {
 
 .send-button[b-9yfspxm82b] {
   background-color: #368727;
-  /* Example blue color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -148,12 +147,10 @@ main[b-izt6un4l4f] {
 
 .send-button:hover[b-9yfspxm82b] {
   background-color: #006044;
-  /* Darker blue on hover */
 }
 
 .send-button svg[b-9yfspxm82b] {
   fill: white;
-  /* Ensure the SVG is white */
 }
 /* _content/Site/Components/Models/FoldingSection.razor.rz.scp.css */
 .folding-section[b-0pdsdulz7f] {

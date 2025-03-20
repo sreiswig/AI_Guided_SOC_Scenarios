@@ -31,7 +31,6 @@
 
 .send-button {
   background-color: #368727;
-  /* Example blue color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -45,10 +44,8 @@
 
 .send-button:hover {
   background-color: #006044;
-  /* Darker blue on hover */
 }
 
 .send-button svg {
   fill: white;
-  /* Ensure the SVG is white */
 }

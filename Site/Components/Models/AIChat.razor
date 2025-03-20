@@ -1,6 +1,6 @@
 @using OpenAI.Chat;
 @using Microsoft.Extensions.Configuration;
-@rendermode InteractiveServer
+@rendermode InteractiveServer;
 
 <div style="display: flex; flex-direction: column; height: 80vh;">
   <div style="flex-grow: 1; overflow-y: auto; padding: 10px;">
@@ -42,10 +42,12 @@
     public string Message { get; }
   }
 
-  private string CurrentInput { get; set; } = "Ask AI";
+  private string CurrentInput { get; set; } = "";
   private List<ChatMessage> Messages { get; set; } = new List<ChatMessage>();
 
-  private string AIContext = "You are a world builder that specializes in Security scenarios for a Security Operations Center. When the user interacts with you, you will first generate a scenario and then help the user understand it. The user will start below.";
+  private string AIContext = """You are a world builder that specializes in Security scenarios for a Security Operations Center. 
+  When the user interacts with you, you will first generate a scenario and then help the user understand it. 
+  The user will start below.""";
 
   private async Task SendMessageToAI() {
     if (!string.IsNullOrWhiteSpace(CurrentInput)) {
